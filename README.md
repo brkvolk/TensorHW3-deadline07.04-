@@ -2,11 +2,11 @@
 ## Жизненный цикл Android компонентов.
 
 Ознакомиться с дополнительными полезными материалами по темам лекции.
-![Жизненный цикл](https://swiftbook.ru/post/tutorials/android-lifecycle/)
-2)[ViewModel](https://habr.com/ru/post/334942/)
-3)[Task and back stack](https://www.youtube.com/watch?v=GN-MltHRpi4)
-4)[Fragment](https://metanit.com/java/android/8.1.php)
-5)[FragmentTransaction](https://startandroid.ru/ru/uroki/vse-uroki-spiskom/175-urok-105-android-3-fragments-dinamicheskaja-rabota.html)
+1.[Жизненный цикл](https://swiftbook.ru/post/tutorials/android-lifecycle/)
+2.[ViewModel](https://habr.com/ru/post/334942/)
+3.[Task and back stack](https://www.youtube.com/watch?v=GN-MltHRpi4)
+4.[Fragment](https://metanit.com/java/android/8.1.php)
+5.[FragmentTransaction](https://startandroid.ru/ru/uroki/vse-uroki-spiskom/175-urok-105-android-3-fragments-dinamicheskaja-rabota.html)
 
 ### Задача №1
 Цель:
