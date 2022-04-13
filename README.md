@@ -2,11 +2,11 @@
 ## Жизненный цикл Android компонентов.
 
 Ознакомиться с дополнительными полезными материалами по темам лекции.
-1)	Жизненный цикл - https://swiftbook.ru/post/tutorials/android-lifecycle/
-2)	ViewModel - https://habr.com/ru/post/334942/
-3)	Task and back stack - https://www.youtube.com/watch?v=GN-MltHRpi4
-4)	Fragment - https://metanit.com/java/android/8.1.php
-5)	FragmentTransaction - https://startandroid.ru/ru/uroki/vse-uroki-spiskom/175-urok-105-android-3-fragments-dinamicheskaja-rabota.html
+1)[Жизненный цикл](https://swiftbook.ru/post/tutorials/android-lifecycle/)
+2)[ViewModel](https://habr.com/ru/post/334942/)
+3)[Task and back stack](https://www.youtube.com/watch?v=GN-MltHRpi4)
+4)[Fragment](https://metanit.com/java/android/8.1.php)
+5)[FragmentTransaction](https://startandroid.ru/ru/uroki/vse-uroki-spiskom/175-urok-105-android-3-fragments-dinamicheskaja-rabota.html)
 
 ### Задача №1
 Цель:
@@ -17,13 +17,13 @@
 Предоставить проект ссылкой на GitHub.
 
 Шаги:
-1)	Реализовать собственную MainActivity. На активити на весь экран должен размещаться SenderFragment.
+1)Реализовать собственную MainActivity. На активити на весь экран должен размещаться SenderFragment.
 
-2)	SenderFragment на интерфейсе должен иметь кнопку c текстом “Send message”. По клику на кнопку должна происходить “отправка сообщения на второй фрагмент”. В этом случае SenderFragment должен быть заменен на ReceiverFragment с передачей ему любого текста сообщения.
+2)SenderFragment на интерфейсе должен иметь кнопку c текстом “Send message”. По клику на кнопку должна происходить “отправка сообщения на второй фрагмент”. В этом случае SenderFragment должен быть заменен на ReceiverFragment с передачей ему любого текста сообщения.
 
-3)	ReceiverFragment должен отображать текст сообщения на экране. Также на фрагменте должна быть кнопка “Read”, нажатие на нее “отметит сообщение прочитанным” и заменит отображаемый текст на “All messages is read”. Нажатие на системную кнопку назад должно вернуть пользователя на SenderFragment.
+3)ReceiverFragment должен отображать текст сообщения на экране. Также на фрагменте должна быть кнопка “Read”, нажатие на нее “отметит сообщение прочитанным” и заменит отображаемый текст на “All messages is read”. Нажатие на системную кнопку назад должно вернуть пользователя на SenderFragment.
 
-4)	На ReceiverFragment необходимо сохранять текущее состояние с помощью ViewModel. В качестве полей состояния ViewModel разрешается использовать только MutableLiveData или LiveData.
+4)На ReceiverFragment необходимо сохранять текущее состояние с помощью ViewModel. В качестве полей состояния ViewModel разрешается использовать только MutableLiveData или LiveData.
 
 
 Критерии сдачи:
@@ -69,8 +69,8 @@
 3)Указаны верные последние обработанные колбэки каждого из фрагментов.
 
 > P.S.
-Для просмотра логов вы можете открыть на нижней панели AndroidStudio logcat
-
-Для примера вы можете взять такой вид установки логов  
-Найти вы их сможете выбрав следующие фильтры Logcat - устройство или эмулятор, ваше приложение из списка, уровень логов info - Information, в строке поиска указать ваш tag, в моем примере это LifecycleCallbacks и выбрать пункт show only selected application.
+>Для просмотра логов вы можете открыть на нижней панели AndroidStudio logcat
+>
+>Для примера вы можете взять такой вид установки логов  
+>Найти вы их сможете выбрав следующие фильтры Logcat - устройство или эмулятор, ваше приложение из списка, уровень логов info - Information, в строке поиска указать >ваш tag, в моем примере это LifecycleCallbacks и выбрать пункт show only selected application.
   
