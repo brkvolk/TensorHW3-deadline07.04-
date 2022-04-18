@@ -11,32 +11,44 @@ import androidx.lifecycle.ViewModelProvider
 
 class ReceiverFragment : Fragment() {
 
-    private lateinit var textMessage: TextView
+    private lateinit var textView: TextView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        //textMessage = findViewById(R.id.textView)
-
-        val viewModel = ViewModelProvider(this).get(ReceiverFragmentViewModel::class.java)
-        viewModel.messageLiveData.observe(this) { message ->
-            textMessage.text = message
-        }
+    companion object {
+        private const val MESSAGE_KEY = "MESSAGE_KEY"
+        fun newInstance(textMessage: String): Fragment =
+            ReceiverFragment().apply {
+                val bundle = Bundle()
+                bundle.putString(MESSAGE_KEY, textMessage)
+                arguments = bundle
+            }
     }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        return inflater.inflate(R.layout.receiver_fragment, container, false)
-    }
+    ): View =
+        inflater.inflate(R.layout.receiver_fragment, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<Button>(R.id.read_button).setOnClickListener {
-            view.findViewById<TextView>(R.id.read_button).text = "All messages is read"
+
+        textView = view.findViewById<TextView>(R.id.textMessage_received)
+        val vm = ViewModelProvider(this).get(MainViewModel::class.java)//
+
+        arguments?.getString(
+            MESSAGE_KEY,
+            null
+        )?.let { text ->
+            vm.setText(text)
         }
 
+        view.findViewById<Button>(R.id.read_button).setOnClickListener {
+            vm.setText("All messages is read")
+        }
+
+        vm.messageLiveData.observe(this.viewLifecycleOwner) { text ->
+            textView.text = text
+        }
     }
 }

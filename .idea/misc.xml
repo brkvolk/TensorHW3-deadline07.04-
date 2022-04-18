@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Nikita/AndroidStudioProjects/ComponentsLivecycle/TensorHW3-deadline07.04-/app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="..\:/Users/Nikita/AndroidStudioProjects/ComponentsLivecycle/TensorHW3-deadline07.04-/app/src/main/res/layout/receiver_fragment.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/Nikita/AndroidStudioProjects/ComponentsLivecycle/TensorHW3-deadline07.04-/app/src/main/res/layout/sender_fragment.xml" value="0.1762917933130699" />
         <entry key="..\:/Users/Nikita/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Nikita/AndroidStudioProjects/MyApplication/app/src/main/res/layout/receiver_fragment.xml" value="0.3625" />
         <entry key="..\:/Users/Nikita/AndroidStudioProjects/MyApplication/app/src/main/res/layout/sender_fragment.xml" value="0.358695652173913" />
@@ -14,5 +17,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.14" />
+      </ProjectState>
+    </option>
   </component>
 </project>
